@@ -43,11 +43,13 @@ const AddfriendDialog = () => {
         <Dialog>
             <Tooltip>
                 <TooltipTrigger>
+                    
                     <Button size="icon" variant="outline">
                         <DialogTrigger>
-                            <UserPlus />
+                              <UserPlus />    
                         </DialogTrigger>
                     </Button>
+                    
                 </TooltipTrigger>
                 <TooltipContent>
                     <p className='text-[8px]'>Add Friend</p>
@@ -56,7 +58,7 @@ const AddfriendDialog = () => {
 
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle>Add Friend</DialogTitle>
+                    <DialogTitle className='mt-5px'>Add Friend</DialogTitle>
                     <DialogDescription>
                         Send request to connect with your friends!
                     </DialogDescription>

@@ -13,8 +13,12 @@ const Friendspage = (props: Props) => {
   const requests = useQuery(api.requests.get)
   return (
     <>
-      <ItemList title='Friends' action = 
-      {<AddfriendDialog/>}>
+      <ItemList title='Friends' 
+      
+      >
+        <div className='mr-22 justify-between align-top'>
+          {<AddfriendDialog/>}
+        </div>
         {
           requests ? requests.length === 0 ? <p className='w-full h-full items-center justify-center flex'>No requests found</p>: requests.map((request)=>{
             return <Request key={request.request._id} id={request.request._id} imageUrl = {request.sender.imageUrl} username = {request.sender.username} email= {request.sender.email}/>
